@@ -1,0 +1,33 @@
+{
+  "name": "local-storage--templates",
+  "version": "2.0.0",
+  "description": "",
+  "homepage": "https://olv-shostak.github.io/local-storage--templates",
+  "scripts": {
+    "start": "parcel src/*.html --no-cache",
+    "build": "parcel build src/*.html --public-url /local-storage--templates/ --no-cache",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olv-shostak/local-storage--templates.git"
+  },
+  "keywords": [],
+  "author": "Alex",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olv-shostak/local-storage--templates/issues"
+  },
+  "dependencies": {
+    "gh-pages": "^4.0.0",
+    "modern-normalize": "^1.1.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "parcel": "^2.6.0",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}
